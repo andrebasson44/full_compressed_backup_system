@@ -1,0 +1,25 @@
+##DESCRIPTION:  
+#   This file contains absolute paths to ONE OR MORE directories to backup independently.
+#   Although it is possible to include as range of directories (or files), it is highly recommended
+#   not do so, for ease of differentiating between backups.
+#
+##NOTES:	    Comments (starting with '#') are to be kept on seperate lines - these are not processed.
+# ------------------------------------------------------------------------------------------------------
+
+##test
+/home/andre/ietsie/delete_enige_tyd
+
+##COMMON SYSTEM FILES, incl. HA cluster (drbd, pacemaker/corosync, samba)
+#/etc
+#/var/mail
+#/var/log
+
+##CRONTABS: found /var/spool/cron/crontabs/ but you should make a copy with [sudo crontab -l > ~/my-root-crontab.txt]
+#/var/spool/cron/crontabs/root
+
+##PERSONAL, BUT COULD BE ESSENTIAL
+#/home/andre/my_cronjobs
+#/home/andre/Downloads
+#/home/andre/Documents
+
+
